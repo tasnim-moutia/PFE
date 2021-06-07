@@ -181,7 +181,7 @@
                 let $chatBody = $(".chat-body");
                 let $messageWrapper = $("#messageWrapper");
                 let user_id = "{{ auth()->user()->id }}";
-                let ip_address = '192.168.1.7';
+                let ip_address = '';
                 let socket_port = '8005';
                 let socket = io(ip_address + ':' + socket_port);
                 let friendId = "{{ $friendInfo->id }}";
